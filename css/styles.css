@@ -1,0 +1,94 @@
+h1	{
+	background-color: yellow;
+}
+
+p {
+	background-color: grey;
+}
+
+.static {
+	background-color: green;
+	position: static;
+	margin-top: 100px;
+	z-index: 1;
+
+	/*Static position is the deafault one; you don't really need to set elements to static*/
+	/*Static position is in the normal flow of the page*/
+}
+
+.relative {
+	background-color: red;
+	position: relative;
+	bottom: 20px;
+	left: 50px;
+	/*Relative position moves the element relative to where it would have been in the normal flow*/
+	/*We use top, bottom, left, and right to offset*/
+	/*Other elements on the page are unaffected*/
+	/*You can offset using pixels, ems, or percentages*/
+}
+
+.absolute {
+	background-color: blue;
+	position: absolute;
+	top: 400px;
+
+	/*Absolute positioning removes elements from the normal flow*/
+	/*offsets from where it would appear in relation to its containing or parent element*/
+}
+
+.fixed {
+	background-color: pink;
+}
+
+h1 {
+	position: fixed;
+	top:0px;
+	z-index: -2; 
+/*Fixed positioning is a special kind of absolute positioning*/
+/*Like absolute positioning, it removes elements from the normal flow*/
+}
+
+/*This is how you set fluid height*/
+
+/*html, body {
+	height: 100%;
+	min-height: 100%; s
+}
+
+
+div	{
+	background-color: grey;
+	height: 60%;
+}*/
+
+/*.centering {
+	background-color: grey;
+	width: 70%;
+	margin: 0 auto;
+}
+
+h1 .centering {
+	text-align: center;
+}*/
+
+
+/*We centered the image by changing its display property to block*/
+
+/*.image1 {
+	width: 200px;
+	display:block;
+	margin: 0 auto;
+
+}*/
+
+/*We centered the image by placing it inside of a div*/
+
+/*.morecentering {
+	background-color: red;
+	width: 25%;
+	margin: 0 auto;
+}
+
+.image2 {
+	width: 200px;
+}*/
